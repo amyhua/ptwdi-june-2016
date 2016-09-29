@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to <%= title %></h1>
+    <div class="ball">
+      <div class="number-wrapper">
+        <span id="number">8</span>
+      </div>
+    </div>
+    <div class="prompt">
+      <h2>Ask me a question</h2>
+      <form id="form">
+        <input type="text" id="question">
+      </form>
+    </div>
+    <!-- https://code.jquery.com/ -->
+    <script
+      src="https://code.jquery.com/jquery-3.1.0.slim.min.js"
+      integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="
+      crossorigin="anonymous"></script>
+    <!-- load app.js last (waits til DOM loaded) -->
+    <script src="javascripts/app.js"></script>
+  </body>
+</html>

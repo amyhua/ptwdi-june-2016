@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px "Indie Flower", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+  text-align: center;
+}
+
+@ball-size: 500px;
+
+.ball {
+  width: @ball-size;
+  height: @ball-size;
+  margin: auto;
+  border-radius: 50%;
+  background-color: black;
+  text-align: center;
+
+  .number-wrapper {
+    height: @ball-size;
+    width: @ball-size;
+    line-height: @ball-size;
+  }
+  #number {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 100px;
+    display: inline-block;
+    width: @ball-size / 2;
+    line-height: @ball-size / 2;
+  }
+}
+
+.prompt {
+  text-align: center;
+  input {
+    padding: 10px;
+    font-size: 2em;
+  }
+}
+
